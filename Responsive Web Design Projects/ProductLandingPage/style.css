@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  padding: 10px;
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+#header{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: #eee;
+  left: 0;
+  padding: 30px 20px;
+}
+
+#header nav ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 60px;
+}
+
+#header nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+#header > img {
+  width: 380px;
+  height: 35px;
+  padding-left: 60px;
+}
+
+.form-box {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.form-box form input{
+  display: inline-block;
+  width: 280px;
+  height: 20px;
+}
+
+.form-box form .btn {
+  background-color: orange;
+  border: none;
+  font-weight: 800;
+  padding: 8px 20px;
+  height: 40px;
+  font-size: 15px;
+  display: block;
+  margin: 10px auto;
+}
+
+#features {
+  margin: 30px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+#features .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#features .item .icon{
+  width: 10%;
+}
+
+#features .item .description{
+  width: 90%;
+}
+
+#how-works{
+  justify-content: center;
+  display: flex;
+}
+
+#how-works iframe{
+  width: 100%;
+  max-width: 560px;
+}
+
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pricing .box {
+  border: 1px solid gray;
+  flex: 1; 
+  margin: 10px;
+}
+
+#pricing ul {
+  list-style: none;
+}
+
+#pricing ul li {
+  padding: 5px 0;
+}
+
+#pricing button {
+  margin: 15px 0;
+  padding: 10px 30px;
+  background-color: orange;
+  border: none;
+}
+
+#pricing .box header{
+  background-color: gray;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  header{
+    flex-direction: row;
+  }
+}
